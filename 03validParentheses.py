@@ -20,7 +20,7 @@ class Solution:
                     del res[-1]
                 else:
                     return False
-        return res == []111
+        return res == []
 
 
 s = Solution()
