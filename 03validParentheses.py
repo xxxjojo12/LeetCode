@@ -11,10 +11,8 @@ class Solution:
         dic = {'(': ')', '[': ']', '{': '}'}
         res = []
         for c in s:
-            print(c, end = ' ')
             if c in dic:
                 res.append(c)
-                print(res)
             else:
                 if(len(res) and dic[res[-1]] == c):
                     del res[-1]
@@ -24,4 +22,4 @@ class Solution:
 
 
 s = Solution()
-print(s.isValid('([])'))
+print(s.isValid(']'))
